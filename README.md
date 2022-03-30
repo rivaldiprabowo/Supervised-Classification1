@@ -7,6 +7,7 @@
 ## Latar Belakang
 <p align='justify' style="font-weight: bold;">
 Dalam bisnis proses industri perhotelan secara umum terdapat dua jenis tamu hotel, yakni: 
+  
 1. tamu hotel yang langsung check in dan menginap di hotel tanpa melakukan booking terlebih dahulu.
 2. tamu hotel yang melakukan booking terlebih dahulu sebelum menginap di hotel.
 
