@@ -23,3 +23,53 @@ Sehingga pembatalan pemesanan hotel (`booking hotel cancellation`) akan menjadi 
 
 Oleh karena itu, saya yang dalam kasus ini memposisikan diri sebagai *Data Scientist* di salah satu perusahaan perhotelan ternama di Portugal akan membuat sebuah machine learning yang memiliki tujuan untuk mempelajari calon tamu yang seperti apa yang kemungkinan besar akan melakukan pembatalan pemesanan kamar hotel dan juga untuk mengantisipasi kerugian yang lebih besar.
   </p>
+
+## Pemahaman Proses Bisnis dan Pemilihan Fitur
+<p align='justify' style="font-weight: bold;">
+Berdasarkan hasil dari proses memahami proses bisnis perhotelan, saya dapat membagi bisnis proses menjadi dua selang waktu, yang tentu saja disesuaikan dengan tujuan dari pembuatan project machine learning ini, yakni analisa pembatalan boking hotel.
+1. Proses booking hotel oleh calon tamu hotel hingga check-in
+2. Proses check-in hingga check-out.
+
+**Secara logika, tamu hotel hanya dapat membatalkan pesanan hotelnya (is_canceled bernilai 1) hanya pada rentang waktu pemesanan booking hotel hingga sesaat sebelum check-in hotel (selang waktu 1). Sehingga fitur yang dipakai untuk prediksi hanya fitur yang dicatat pada rentang waktu tersebut.** Berikut ini adalah fitur/kolom pada kedua selang waktu yang telah dianalisa sebelumnya (`is_canceled` dan `reservation_status` tidak dimasukan karena termasuk ke dalam label):
+
+1. Fitur yang tercatat selama selang waktu proses booking hotel oleh calon tamu hotel hingga check-in (fitur yang dipakai):
+    * adults
+    * agent
+    * arrival_date_day_of_month
+    * arrival_date_month
+    * arrival_date_week_number
+    * arrival_date_year
+    * babies
+    * booking_changes
+    * children
+    * company
+    * country
+    * customer_type
+    * days_in_waiting_list
+    * deposit_type
+    * distribution_channel
+    * hotel
+    * is_repeated_guest
+    * lead_time
+    * market_segment
+    * meal
+    * previous_bookings_not_canceled
+    * previous_cancellations
+    * required_car_parking_spaces
+    * reserved_room_type
+    * total_of_special_requests
+    * arrival_date (kolom tambahan)
+    * week_lead_time (kolom tambahan)
+2. Fitur yang dicatat selama selang waktu proses check-in hingga check-out (fitur yang tidak dipakai):
+    * adr
+    * assigned_room_type
+    * reservation_status_date
+    * stays_in_weekend_nights
+    * stays_in_week_nights
+    
+Selanjutnya kita menganalisis dari fitur pada selang waktu nomor 1, mana fitur yang sekiranya secara logika dan secara data tidak mendukung prediksi pembatalan booking hotel ini. Hasil analisa sudah dipaparkan pada bagian sebelumnya, berikut adalah ringkasan dari fitur yang tidak dipakai:
+1. Terlalu banyak missing value dan tidak ada hubungan dengan kolom lain (nilainya tidak bisa ditrack di kolom lain): `agent` dan `company`.
+2. Hampir semua data pada kolom hanya berisikan satu nilai saja (persentase salah satu nilai unik pada kolom ini sangatlah besar >=95%, sehingga dapat digeneralisasi menjadi satu nilai saja), dan kolom-kolom ini saling berkaitan satu dengan lainnya: `is_repeated_guest`, `previous_bookings_not_canceled`, dan `previous_cancellations`.
+Total terdapat lima kolom yang tidak dipakai dalam fitur machine learning.
+*Catatan: label yang dipilih berdasarkan analisis adalah `is_canceled`
+  </p>
