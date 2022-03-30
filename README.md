@@ -75,12 +75,15 @@ Setelah melalui tahapan Data Cleansing, terdapat 492 data yang terbuang dari tot
   </p>
 
 ## Kesimpulan Data Analisis
+<p align='justify' style="font-weight: bold;">
+  
 ![time series](https://user-images.githubusercontent.com/99151517/160755467-c6dc9698-0c5d-4753-9eb6-bba89041172c.JPG)
 ![date day](https://user-images.githubusercontent.com/99151517/160755468-4d99c2ff-3b79-4ad6-a03b-5632979efc4d.JPG)
 ![month](https://user-images.githubusercontent.com/99151517/160755475-d1e7b5af-b70b-42ea-89d1-4cd987599348.JPG)
 ![proportions](https://user-images.githubusercontent.com/99151517/160755462-78d2126e-256c-4ba7-ad11-df3ce3b9f0ec.JPG)
-<p align='justify' style="font-weight: bold;">
+
 Pada kasus di dataset ini, kita hanya tertarik kepada profil para tamu yang kemungkinan besar melakukan cancellation booking hotel. **Berikut adalah hasil analisa profil tamu hotel yang melakukan cancellation booking hotel berdasarkan statistik yang ada:**
+  
 * `adults` berjumlah 2 orang yang tidak membawa anak kecil (`children` berjumlah 0) dan bayi (`babies` berjumlah 0).
 * Tamu hotel yang tidak menunggu hari reservasi hotel `days_in_waiting_lists`, tidak memesan fasilitas tambahan `total_of_special_requests`, dan tidak memerlukan lahan parkir mobil `required_car_parking_spaces`.
 * Para calon tamu hotel banyak melakukan cancellation pada bulan `Juni`, dan `setiap pertengahan bulan`.
