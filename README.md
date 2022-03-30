@@ -1,5 +1,5 @@
 # Supervised-Classification
-## Hotel Cancellation Cases
+## Portugal Hotel Cancellation Cases
 ### By: Muhamamd Rivaldi Prabowo
 
 ![hotel portugal](https://user-images.githubusercontent.com/99151517/160754823-e0d86319-3646-4fb8-baf8-55e5f80593d4.jpg)
