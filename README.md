@@ -145,7 +145,7 @@ Setelah dilakukan perbandingan antara Model tanpa Imbalance Learning dengan Mode
 Pengaruh penggunaan machine learning terhadap performa bisnis dapat dilihat dari berapa banyak keuntungan yang diperoleh ataupun berapa banyak potensi kerugian yang bisa dikurangi dengan pemakaian machine learning. Dalam kasus ini hal yang ingin ditekan adalah kesalahan dalam memprediksi cancellation booking hotel atau tidak *(False Negative)*, dimana hal yang paling merugikan adalah saat kita memprediksi tamu akan datang akan tetapi kenyataannya tidak datang ke hotel (booking cancellation). Potensi kerugian yang dapat ditekan karena pemakaian machine learning adalah sebagai berikut:
 * Terdapat 44224 kesalahan prediksi (default) dari total 119390 data (Sekitar 37% kesalahan dalam memprediksi).
 * Model machine learning yang dibuat berdasarkan XGBoost Classifier memiliki skor 82.78% atau galat sekitar 17.22%.
-* Harga hotel yang dipakai pada perhitungan ini adalah data rata-rata hotel di negara portugal (karena lokasi pengambilan data berada di negara portugal) yaitu sebesar (75 USD,  <a href="https://championtraveler.com/price/cost-of-a-trip-to-portugal/)">Sumber</a>.
+* Harga hotel yang dipakai pada perhitungan ini adalah data rata-rata hotel di negara portugal (karena lokasi pengambilan data berada di negara portugal) yaitu sebesar (75 USD,  <a href="https://championtraveler.com/price/cost-of-a-trip-to-portugal/)">Sumber Informasi</a>).
 * **Potensial loss tanpa machine learning** = jumlah kesalahan prediksi x harga rata-rata hotel = 44224 x 75 USD = **3.316.800 USD**.
 * **Potensial loss dengan machine learning** = persentase galat machine learning x total data x harga rata-rata hotel = 17.22% x 119390 x 75 USD = **1.541.921 USD**.
 
