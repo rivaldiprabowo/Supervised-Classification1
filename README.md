@@ -71,5 +71,27 @@ Selanjutnya kita menganalisis dari fitur pada selang waktu nomor 1, mana fitur y
 1. Terlalu banyak missing value dan tidak ada hubungan dengan kolom lain (nilainya tidak bisa ditrack di kolom lain): `agent` dan `company`.
 2. Hampir semua data pada kolom hanya berisikan satu nilai saja (persentase salah satu nilai unik pada kolom ini sangatlah besar >=95%, sehingga dapat digeneralisasi menjadi satu nilai saja), dan kolom-kolom ini saling berkaitan satu dengan lainnya: `is_repeated_guest`, `previous_bookings_not_canceled`, dan `previous_cancellations`.
 Total terdapat lima kolom yang tidak dipakai dalam fitur machine learning.
+Setelah melalui tahapan Data Cleansing, terdapat 492 data yang terbuang dari total 119390 data (0,4%), dengan kata lain data masih **tersisa 118898 data atau 99.59% dari total data**.
 *Catatan: label yang dipilih berdasarkan analisis adalah `is_canceled`
   </p>
+
+## Kesimpulan Data Analisis
+<p align='justify' style="font-weight: bold;">
+Pada kasus di dataset ini, kita hanya tertarik kepada profil para tamu yang kemungkinan besar melakukan cancellation booking hotel. **Berikut adalah hasil analisa profil tamu hotel yang melakukan cancellation booking hotel berdasarkan statistik yang ada:**
+* `adults` berjumlah 2 orang yang tidak membawa anak kecil (`children` berjumlah 0) dan bayi (`babies` berjumlah 0).
+* Tamu hotel yang tidak menunggu hari reservasi hotel `days_in_waiting_lists`, tidak memesan fasilitas tambahan `total_of_special_requests`, dan tidak memerlukan lahan parkir mobil `required_car_parking_spaces`.
+* Para calon tamu hotel banyak melakukan cancellation pada bulan `Juni`, dan `setiap pertengahan bulan`.
+* Musim `Summer` menjadi musim yang paling banyak cancellation booking hotel.
+* `Hotel City` menjadi hotel dengan pembatalan booking hotel paling banyak.
+* Sebanyak **43,86%** cancellation booking hotel dari total data semua tamu hotel berasal dari negara Portugal `PRT`.
+* Sebanyak **37%** cancellation booking hotel dari total data semua tamu hotel tidak melakukan deposit `No Deposit` dan juga customer `Transient`.
+* Sebanyak **35%** cancellation booking hotel dari total data semua tamu hotel berasal dari distribution channel `TA/TO`.
+* Sebanyak **30%** cancellation booking hotel dari total data semua tamu hotel memesan tipe kamar `A` dan juga memilih paket meal `BB`.
+* Sebanyak **22%** cancellation booking hotel dari total data semua tamu hotel berasal dari market segment `Online TA`.
+  </p>
+  
+  ## Saran Untuk Management Hotel
+1. Karena banyak tamu hotel yang terdiri dari orang dewasa berjumlah dua orang, saya asumsikan bahwa mayoritas tamu yang menginap di hotel merupakan pasangan, sehingga agar lebih menarik calon tamu hotel dan untuk mengurangi booking cancellation, sebaiknya pihak hotel memberikan diskon atau paket yang menarik khusus untuk tamu yang datang secara berpasangan.
+2. Karena mayoritas calon tamu yang melakukan booking cancellation tidak melakukan deposit di awal, maka agar menghindari kerugian, sebaiknya pihak management hotel harus memberikan peraturan bahwa setiap calon tamu hotel (baik itu city hotel atau resort hotel) memberikan deposit awal sejumlah 5-20% dari total biaya menginap, baik itu dari pemesanan via apapun (online, travel agent atau apapun itu).
+3. Karena banyak pembatalan booking dilakukan pada musim panas/tengah tahun, maka pihak management hotel sebaiknya membuat banyak promo menarik khusus pada waktu tersebut, tujuannya untuk lebih menarik banyak calon tamu hotel. Berikan harga diskon dan fasilitas yang bagus, akan tetapi naikan pula biaya deposit awalnya, agar jika tamu melakukan pembatalan booking maka pihak hotel masih mendapatkan pemasukan.
+4. Biaya deposit awal baiknya memang ada di semua jenis reserved_room, tetapi lebih baik jika kamar tipe A memiliki jumlah biaya deposit awal yang lebih besar, karena calon tamu hotel yang membatalkan pesanan banyak memesan kamar tipe ini.
