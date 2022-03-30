@@ -2,9 +2,7 @@
 ## Hotel Cancellation Cases
 ### By: Muhamamd Rivaldi Prabowo
 
-<p align="center">
-<img src="https://https://github.com/rivaldiprabowo/Supervised-Classification1/blob/main/hotel%20portugal.jpg">
-</p>
+![hotel portugal](https://user-images.githubusercontent.com/99151517/160754823-e0d86319-3646-4fb8-baf8-55e5f80593d4.jpg)
 
 ## Latar Belakang
 <p align='justify' style="font-weight: bold;">
