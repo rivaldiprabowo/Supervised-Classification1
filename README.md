@@ -19,7 +19,7 @@ Dalam konteks bisnis perhotelan, untuk pengunjung hotel di kategori pertama, jik
 >* Menolak pengunjung lain yang memesan kamar yang telah dipesan (*booked room*), dan
 >* Memberi layanan penjemputan di bandara/stasiun/terminal apabila diperlukan.
 
-Sehingga pembatalan pemesanan hotel (`booking hotel cancellation`) akan menjadi sesuatu yang merugikan bagi pihak hotel. Berdasarkan sumber dari https://championtraveler.com/price/cost-of-a-trip-to-portugal/) bahwa rata-rata biaya penginapan semalam di Portugal sebesar 75 USD (Data pada dataset diambil pada hotel di negara Portugal), bayangkan berapa banyak kerugian yang harus ditanggung oleh pihak pengusaha perhotelan apabila banyak calon tamu hotel yang tiba-tiba membatalkan pemesanan kamar hotel.
+Sehingga pembatalan pemesanan hotel (`booking hotel cancellation`) akan menjadi sesuatu yang merugikan bagi pihak hotel. Berdasarkan sumber dari <a href="https://championtraveler.com/price/cost-of-a-trip-to-portugal/)">Data Source</a> bahwa rata-rata biaya penginapan semalam di Portugal sebesar 75 USD (Data pada dataset diambil pada hotel di negara Portugal), bayangkan berapa banyak kerugian yang harus ditanggung oleh pihak pengusaha perhotelan apabila banyak calon tamu hotel yang tiba-tiba membatalkan pemesanan kamar hotel.
 
 Oleh karena itu, saya yang dalam kasus ini memposisikan diri sebagai *Data Scientist* di salah satu perusahaan perhotelan ternama di Portugal akan membuat sebuah machine learning yang memiliki tujuan untuk mempelajari calon tamu yang seperti apa yang kemungkinan besar akan melakukan pembatalan pemesanan kamar hotel dan juga untuk mengantisipasi kerugian yang lebih besar.
   </p>
